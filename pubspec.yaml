@@ -1,0 +1,63 @@
+name: vetra_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.0
+  
+
+  # Core UI + utilities
+  cupertino_icons: ^1.0.6
+  path_provider: ^2.1.5
+
+  # State & routing
+  hooks_riverpod: ^2.4.0
+  go_router: ^7.0.1
+
+  # UI helpers
+  percent_indicator: ^4.2.2
+  url_launcher: ^6.1.10
+
+  # -------------------------
+  # OFFLINE DATABASE (ISAR 3)
+  # -------------------------
+
+  # -------------------------
+  # DEVICE FEATURES (ANDROID)
+  # -------------------------
+  camera: ^0.11.0+2
+  image_picker: ^1.0.7
+  permission_handler: ^11.0.0
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  pdf: ^3.11.3
+  open_filex: ^4.3.2
+  http: ^1.6.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code generation for ISAR 3
+  analyzer: ^5.13.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/vetra_cow.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
