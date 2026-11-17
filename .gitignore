@@ -97,3 +97,6 @@ windows/flutter/ephemeral/
 *.dSYM.zip
 app.*.symbols
 app.*.map.json
+
+# Local build logs
+**/build_log*.txt
